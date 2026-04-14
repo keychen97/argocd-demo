@@ -7,5 +7,5 @@ app = FastAPI()
 def home():
     return {
         "version": os.getenv("APP_VERSION", "v1.0"),
-        "message": "Hello CI/CD 🚀",
+        "message": {"msg": "hello CI/CD"},
     }
